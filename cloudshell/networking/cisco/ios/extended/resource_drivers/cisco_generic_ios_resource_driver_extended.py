@@ -110,5 +110,5 @@ if __name__ == '__main__':
     # import sys; sys.exit()
     # print resource_driver.ConfigureInterfaceSpeed(data_json, 'gigabitEthernet 1/1|gig 1/2', '1000')
 
-    # print resource_driver.CreatePortchannel(data_json, 'Shell/sw9003-if-10-3.cisco.com/Chassis 0/Module 1/GigabitEthernet1-5;Shell/sw9003-if-10-3.cisco.com/Chassis 0/Module 1/GigabitEthernet1-6' )
-    print resource_driver.DeletePortchannel(data_json, 'Shell/sw9003-if-10-3.cisco.com/Chassis 0/Module 1/GigabitEthernet1-5;Shell/sw9003-if-10-3.cisco.com/Chassis 0/Module 1/GigabitEthernet1-6' )
+    print resource_driver.CreatePortchannel(data_json, 'Shell/sw9003-if-10-3.cisco.com/Chassis 0/Module 1/GigabitEthernet1-5;Shell/sw9003-if-10-3.cisco.com/Chassis 0/Module 1/GigabitEthernet1-6' )
+    # print resource_driver.DeletePortchannel(data_json, 'Shell/sw9003-if-10-3.cisco.com/Chassis 0/Module 1/GigabitEthernet1-5;Shell/sw9003-if-10-3.cisco.com/Chassis 0/Module 1/GigabitEthernet1-6' )
