@@ -367,6 +367,7 @@ class CiscoIOSHandlerExtended(CiscoHandlerBase):
             description = ';'.join(['speed={}'.format(speed), 'mtu={}'.format(mtu)])
             commands_list = list()
             commands_list.append('interface ' + port_name)
+            commands_list.append('no shutdown')
             commands_list.append('description ' + description)
             self.send_commands_list(commands_list)
             self._exit_configuration_mode()
@@ -413,6 +414,7 @@ class CiscoIOSHandlerExtended(CiscoHandlerBase):
             else:
                 command_list.append('mtu ' + mtu)
 
+            commands_list.append('shutdown')
             self.send_commands_list(command_list)
             self._exit_configuration_mode()
 
