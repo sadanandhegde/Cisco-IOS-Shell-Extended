@@ -401,7 +401,7 @@ class CiscoIOSHandlerExtended(CiscoHandlerBase):
             port_descr = re.search('description (.*)', port_config)
             command_list = list()
 
-            command_list.append('interface ' port_name)
+            command_list.append('interface ' + port_name)
             try:
                 speed = re.search('speed=(.*?);', port_descr).group(1)
             except:
@@ -416,7 +416,7 @@ class CiscoIOSHandlerExtended(CiscoHandlerBase):
             else:
                 command_list.append('mtu ' + mtu)
 
-            commands_list.append('shutdown')
+            command_list.append('shutdown')
             self.send_commands_list(command_list)
             self._exit_configuration_mode()
 
